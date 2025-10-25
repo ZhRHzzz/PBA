@@ -1,0 +1,5 @@
+This program contains the source code for the article "Numerical test of the PBA periodogram and Period analysis of FRB 20190520B," and is divided into two parts.
+
+The first folder, "Simulation experiment," contains the simulation experiment program, which is used to compute the PBA search results for different simulation experiments. The parameters for the simulation experiments can be modified in the "if name == 'main':" module within the program. Each simulation with different parameters runs 100 times, and the program returns the sigma, the number of bursts, and the misjudged periods for each PBA search under the different parameters.
+
+The second file, "Period search for FRB 20190520.py," is the period search for FRB 20190520B. This program relies on the data file for FRB 20190520B (the file has been organized in an Excel sheet, which includes different sheets; the period search mainly uses the "remove 58" sheet). The results return the sigma for each period search, the phase of each burst, and the observation phase for each iteration (for plotting).
