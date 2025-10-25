@@ -561,52 +561,52 @@ sigma_10_initial, bp_10, p_cumu_10, T_10 = period_search(512, 1024, obs_dis_10)
 if f2 > 2:
     f2 = 2   # The maximum fluence value is changed to 2 to facilitate both storing and reading files.
 
-# np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻sigma结果(代入拟合高斯曲线算sigma)/"+str(f1)+"~"+str(f2)+"搜寻周期1~2天", sigma_1_initial)
-# np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻P_cumu结果/"+str(f1)+"~"+str(f2)+"搜寻周期1~2天", p_cumu_1)
-# np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻暴发相位结果/"+str(f1)+"~"+str(f2)+"搜寻周期1~2天", bp_1)
-# np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻观测相位结果/"+str(f1)+"~"+str(f2)+"搜寻周期1~2天", obs_dis_1)
-# #
-# np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻sigma结果(代入拟合高斯曲线算sigma)/"+str(f1)+"~"+str(f2)+"搜寻周期2~4天", sigma_2_initial)
-# np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻P_cumu结果/"+str(f1)+"~"+str(f2)+"搜寻周期2~4天", p_cumu_2)
-# np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻暴发相位结果/"+str(f1)+"~"+str(f2)+"搜寻周期2~4天", bp_2)
-# np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻观测相位结果/"+str(f1)+"~"+str(f2)+"搜寻周期2~4天", obs_dis_2)
-# #
-# np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻sigma结果(代入拟合高斯曲线算sigma)/"+str(f1)+"~"+str(f2)+"搜寻周期4~8天", sigma_3_initial)
-# np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻P_cumu结果/"+str(f1)+"~"+str(f2)+"搜寻周期4~8天", p_cumu_3)
-# np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻暴发相位结果/"+str(f1)+"~"+str(f2)+"搜寻周期4~8天", bp_3)
-# np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻观测相位结果/"+str(f1)+"~"+str(f2)+"搜寻周期4~8天", obs_dis_3)
-# #
-# np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻sigma结果(代入拟合高斯曲线算sigma)/"+str(f1)+"~"+str(f2)+"搜寻周期8~16天", sigma_4_initial)
-# np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻P_cumu结果/"+str(f1)+"~"+str(f2)+"搜寻周期8~16天", p_cumu_4)
-# np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻暴发相位结果/"+str(f1)+"~"+str(f2)+"搜寻周期8~16天", bp_4)
-# np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻观测相位结果/"+str(f1)+"~"+str(f2)+"搜寻周期8~16天", obs_dis_4)
-# #
-# np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻sigma结果(代入拟合高斯曲线算sigma)/"+str(f1)+"~"+str(f2)+"搜寻周期16~32天", sigma_5_initial)
-# np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻P_cumu结果/"+str(f1)+"~"+str(f2)+"搜寻周期16~32天", p_cumu_5)
-# np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻暴发相位结果/"+str(f1)+"~"+str(f2)+"搜寻周期16~32天", bp_5)
-# np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻观测相位结果/"+str(f1)+"~"+str(f2)+"搜寻周期16~32天", obs_dis_5)
-# #
-# np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻sigma结果(代入拟合高斯曲线算sigma)/"+str(f1)+"~"+str(f2)+"搜寻周期32~64天", sigma_6_initial)
-# np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻P_cumu结果/"+str(f1)+"~"+str(f2)+"搜寻周期32~64天", p_cumu_6)
-# np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻暴发相位结果/"+str(f1)+"~"+str(f2)+"搜寻周期32~64天", bp_6)
-# np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻观测相位结果/"+str(f1)+"~"+str(f2)+"搜寻周期32~64天", obs_dis_6)
+np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻sigma结果(代入拟合高斯曲线算sigma)/"+str(f1)+"~"+str(f2)+"搜寻周期1~2天", sigma_1_initial)
+np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻P_cumu结果/"+str(f1)+"~"+str(f2)+"搜寻周期1~2天", p_cumu_1)
+np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻暴发相位结果/"+str(f1)+"~"+str(f2)+"搜寻周期1~2天", bp_1)
+np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻观测相位结果/"+str(f1)+"~"+str(f2)+"搜寻周期1~2天", obs_dis_1)
 #
-# np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻sigma结果(代入拟合高斯曲线算sigma)/"+str(f1)+"~"+str(f2)+"搜寻周期64~128天", sigma_7_initial)
-# np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻P_cumu结果/"+str(f1)+"~"+str(f2)+"搜寻周期64~128天", p_cumu_7)
-# np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻暴发相位结果/"+str(f1)+"~"+str(f2)+"搜寻周期64~128天", bp_7)
-# np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻观测相位结果/"+str(f1)+"~"+str(f2)+"搜寻周期64~128天", obs_dis_7)
-# #
-# np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻sigma结果(代入拟合高斯曲线算sigma)/"+str(f1)+"~"+str(f2)+"搜寻周期128~256天", sigma_8_initial)
-# np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻P_cumu结果/"+str(f1)+"~"+str(f2)+"搜寻周期128~256天", p_cumu_8)
-# np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻暴发相位结果/"+str(f1)+"~"+str(f2)+"搜寻周期128~256天", bp_8)
-# np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻观测相位结果/"+str(f1)+"~"+str(f2)+"搜寻周期128~256天", obs_dis_8)
-# #
-# np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻sigma结果(代入拟合高斯曲线算sigma)/"+str(f1)+"~"+str(f2)+"搜寻周期256~512天", sigma_9_initial)
-# np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻P_cumu结果/"+str(f1)+"~"+str(f2)+"搜寻周期256~512天", p_cumu_9)
-# np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻暴发相位结果/"+str(f1)+"~"+str(f2)+"搜寻周期256~512天", bp_9)
-# np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻观测相位结果/"+str(f1)+"~"+str(f2)+"搜寻周期256~512天", obs_dis_9)
-# #
-# np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻sigma结果(代入拟合高斯曲线算sigma)/"+str(f1)+"~"+str(f2)+"搜寻周期512~1024天", sigma_10_initial)
-# np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻P_cumu结果/"+str(f1)+"~"+str(f2)+"搜寻周期512~1024天", p_cumu_10)
-# np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻暴发相位结果/"+str(f1)+"~"+str(f2)+"搜寻周期512~1024天", bp_10)
-# np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻观测相位结果/"+str(f1)+"~"+str(f2)+"搜寻周期512~1024天", obs_dis_10)
+np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻sigma结果(代入拟合高斯曲线算sigma)/"+str(f1)+"~"+str(f2)+"搜寻周期2~4天", sigma_2_initial)
+np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻P_cumu结果/"+str(f1)+"~"+str(f2)+"搜寻周期2~4天", p_cumu_2)
+np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻暴发相位结果/"+str(f1)+"~"+str(f2)+"搜寻周期2~4天", bp_2)
+np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻观测相位结果/"+str(f1)+"~"+str(f2)+"搜寻周期2~4天", obs_dis_2)
+#
+np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻sigma结果(代入拟合高斯曲线算sigma)/"+str(f1)+"~"+str(f2)+"搜寻周期4~8天", sigma_3_initial)
+np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻P_cumu结果/"+str(f1)+"~"+str(f2)+"搜寻周期4~8天", p_cumu_3)
+np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻暴发相位结果/"+str(f1)+"~"+str(f2)+"搜寻周期4~8天", bp_3)
+np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻观测相位结果/"+str(f1)+"~"+str(f2)+"搜寻周期4~8天", obs_dis_3)
+#
+np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻sigma结果(代入拟合高斯曲线算sigma)/"+str(f1)+"~"+str(f2)+"搜寻周期8~16天", sigma_4_initial)
+np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻P_cumu结果/"+str(f1)+"~"+str(f2)+"搜寻周期8~16天", p_cumu_4)
+np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻暴发相位结果/"+str(f1)+"~"+str(f2)+"搜寻周期8~16天", bp_4)
+np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻观测相位结果/"+str(f1)+"~"+str(f2)+"搜寻周期8~16天", obs_dis_4)
+#
+np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻sigma结果(代入拟合高斯曲线算sigma)/"+str(f1)+"~"+str(f2)+"搜寻周期16~32天", sigma_5_initial)
+np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻P_cumu结果/"+str(f1)+"~"+str(f2)+"搜寻周期16~32天", p_cumu_5)
+np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻暴发相位结果/"+str(f1)+"~"+str(f2)+"搜寻周期16~32天", bp_5)
+np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻观测相位结果/"+str(f1)+"~"+str(f2)+"搜寻周期16~32天", obs_dis_5)
+#
+np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻sigma结果(代入拟合高斯曲线算sigma)/"+str(f1)+"~"+str(f2)+"搜寻周期32~64天", sigma_6_initial)
+np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻P_cumu结果/"+str(f1)+"~"+str(f2)+"搜寻周期32~64天", p_cumu_6)
+np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻暴发相位结果/"+str(f1)+"~"+str(f2)+"搜寻周期32~64天", bp_6)
+np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻观测相位结果/"+str(f1)+"~"+str(f2)+"搜寻周期32~64天", obs_dis_6)
+
+np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻sigma结果(代入拟合高斯曲线算sigma)/"+str(f1)+"~"+str(f2)+"搜寻周期64~128天", sigma_7_initial)
+np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻P_cumu结果/"+str(f1)+"~"+str(f2)+"搜寻周期64~128天", p_cumu_7)
+np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻暴发相位结果/"+str(f1)+"~"+str(f2)+"搜寻周期64~128天", bp_7)
+np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻观测相位结果/"+str(f1)+"~"+str(f2)+"搜寻周期64~128天", obs_dis_7)
+#
+np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻sigma结果(代入拟合高斯曲线算sigma)/"+str(f1)+"~"+str(f2)+"搜寻周期128~256天", sigma_8_initial)
+np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻P_cumu结果/"+str(f1)+"~"+str(f2)+"搜寻周期128~256天", p_cumu_8)
+np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻暴发相位结果/"+str(f1)+"~"+str(f2)+"搜寻周期128~256天", bp_8)
+np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻观测相位结果/"+str(f1)+"~"+str(f2)+"搜寻周期128~256天", obs_dis_8)
+#
+np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻sigma结果(代入拟合高斯曲线算sigma)/"+str(f1)+"~"+str(f2)+"搜寻周期256~512天", sigma_9_initial)
+np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻P_cumu结果/"+str(f1)+"~"+str(f2)+"搜寻周期256~512天", p_cumu_9)
+np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻暴发相位结果/"+str(f1)+"~"+str(f2)+"搜寻周期256~512天", bp_9)
+np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻观测相位结果/"+str(f1)+"~"+str(f2)+"搜寻周期256~512天", obs_dis_9)
+#
+np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻sigma结果(代入拟合高斯曲线算sigma)/"+str(f1)+"~"+str(f2)+"搜寻周期512~1024天", sigma_10_initial)
+np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻P_cumu结果/"+str(f1)+"~"+str(f2)+"搜寻周期512~1024天", p_cumu_10)
+np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻暴发相位结果/"+str(f1)+"~"+str(f2)+"搜寻周期512~1024天", bp_10)
+np.save("D:/PyCharm/Project/Project_FRB/190520B周期搜寻_新数据/190520B搜寻结果(No FAST New)/190520B搜寻观测相位结果/"+str(f1)+"~"+str(f2)+"搜寻周期512~1024天", obs_dis_10)
