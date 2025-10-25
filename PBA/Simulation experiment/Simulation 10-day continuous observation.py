@@ -409,10 +409,10 @@ def task(actual_period, actual_p, actual_pbp, actual_burst_rate):
     for t in range(nT):
         obs_dis_3[t, :, :] = obs_distribution(T_1[t], obs_day_time_r, obs_dur_time_r)
     # # 8 to 16-day test period.
-    fre = np.linspace(1 / 8, 1 / 16, nT)  # 设置测试频率 nT=100
-    T = 1. / fre  # 测试周期 = 1/测试频率
-    for t in range(nT):  # 不同测试周期/频率
-        obs_dis_4[t, :, :] = obs_distribution(T[t], obs_day_time_r, obs_dur_time_r)  # 计算该测试周期，不同中心相位下，观测时间的相位分布
+    fre = np.linspace(1 / 8, 1 / 16, nT)  
+    T = 1. / fre  
+    for t in range(nT):  
+        obs_dis_4[t, :, :] = obs_distribution(T[t], obs_day_time_r, obs_dur_time_r) 
 
     false_period = [np.empty((0,)) for _ in range(8)]
     for number in range(100):  # Run 100 times for each actual cycle.
@@ -490,7 +490,6 @@ def task(actual_period, actual_p, actual_pbp, actual_burst_rate):
         sigma_4_initial, T_4 = period_search(8, 16, obs_dis_4)
 
         #####################################################################################################
-        ##########################################画Sigma热图#################################################
         #####################################################################################################
         for bk in range(search_index, search_index+1):
             sigma_1 = sigma_1_initial[:, :, bk]
@@ -567,4 +566,5 @@ if __name__ == "__main__":
             process.join()
 
     print("观测策略.10天, 完成")
+
 
